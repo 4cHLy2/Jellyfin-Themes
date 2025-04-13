@@ -1,0 +1,189 @@
+/* Kitsune & Sakura Theme by 4cHLy2 */
+/* Background Image created with DALL-E*/
+/* Colors picked with the help of https://www.color-hex.com */
+
+.backdropImage {
+    display: block;
+}
+
+.backgroundContainer {
+    background-color: var(--background-color) !important;
+    background-image: url("https://i.imgur.com/LOkrMnU.png") !important;
+    background-size: cover !important;
+}
+
+:root {
+    --secondary: #F4C2C2 !important; /* Soft pastel rose */
+    --accent: #F8BBD0 !important; /* Light cherry blossom */
+    --background-color: #2E1A25 !important; /* Dark plum */
+    --text-color: #efced4 !important; /* Light pinkish-white*/
+    --scrollbar-color: #563F51 !important; /* Dark purple*/
+    --hover-color: #9e6086 !important; /*Dark Sakura*/
+}
+
+/* Background Styling */
+html, body {
+    background-color: var(--background-color) !important; /* Fallback color */
+    height: 100% !important;
+    width: 100% !important;
+    color: var(--text-color) !important;
+}
+
+/* Scrollbar Styling */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-color) #202020;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-color);
+    border-radius: 5px;
+}
+
+/* Header Icon Styling */
+.paper-icon-button-light {
+    color: var(--scrollbar-color) !important; /* Updated to match dark purple */
+}
+
+.skinHeader-withBackground {
+    background-color: var(--background-color) !important;
+}
+
+/*.pageTitleWithDefaultLogo {
+    background-image: url(../../assets/img/banner-light.png);
+}*/
+
+.button-submit {
+    background: var(--scrollbar-color);
+    color: #fff;
+}
+
+.button-submit:focus {
+    background: var(--background-color);
+    color: #fff;
+}
+
+.emby-checkbox:checked + span + .checkboxOutline {
+    border-color: var(--scrollbar-color);
+}
+
+.emby-checkbox:focus + span + .checkboxOutline {
+    border-color: #fff;
+}
+
+.emby-checkbox:checked + span + .checkboxOutline,
+.itemProgressBarForeground {
+    background-color: var(--scrollbar-color);
+}
+
+.emby-checkbox:focus:not(:checked) + span + .checkboxOutline {
+    border-color: var(--scrollbar-color);
+}
+
+.emby-tab-button-active {
+    color: var(--secondary);
+}
+
+.emby-tab-button:hover {
+    color: var(--hover-color);
+}
+
+.emby-tab-button {
+    color: var(--text-color);
+}
+
+.raised {
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.selectionCommandsPanel {
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.noBackdropTransparency .detailPageSecondaryContainer {
+    background-color: #2E1A25cc;
+}
+
+.emby-select-withcolor {
+    color: inherit;
+    background: var(--scrollbar-color);
+    border: 0.07em solid #292929;
+}
+
+.countIndicator,
+.fullSyncIndicator,
+.mediaSourceIndicator,
+.playedIndicator {
+    background: var(--scrollbar-color);
+}
+
+.detailRibbon {
+    background: #563F51cc;
+}
+
+.listItem:hover {
+    background: var(--background-color);
+}
+
+/*fixed blue hover hue*/
+@media (hover: hover) and (pointer: fine) {
+    .paper-icon-button-light:hover:not(:disabled) {
+        color: var(--background-color);
+        background-color: #563F5133;
+    }
+}
+
+.cardText-secondary,
+.fieldDescription,
+.guide-programNameCaret,
+.listItem .secondary,
+.nowPlayingBarSecondaryText,
+.programSecondaryTitle,
+.secondaryText {
+    color: var(--text-color);
+}
+
+.defaultCardBackground1 {
+    background-color: #D98CA7;
+}
+
+.defaultCardBackground2 {
+    background-color: #3E0F4F;
+}
+
+.defaultCardBackground3 {
+    background-color: #8A6373;
+}
+
+.defaultCardBackground4 {
+    background-color: #241424;
+}
+
+.defaultCardBackground5 {
+    background-color: #B57B9D;
+}
+
+.button-link {
+    color: var(--text-color) !important;
+}
+
+.emby-input:focus,
+.emby-textarea:focus {
+    border-color: #292929;
+}
+
+.inputLabelFocused,
+.selectLabelFocused,
+.textareaLabelFocused {
+    color: var(--text-color);
+}
+
+.button-flat:hover {
+    color: var(--background-color);
+}
